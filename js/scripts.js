@@ -28,6 +28,20 @@ function numberOfOccurrencesInText(word, text) {
   return wordCount;
 }
 
+function boldPassage(word, text) {
+  let htmlString = "<p>";
+  let textArray = text.split(" ");
+  textArray.forEach(function (element) {
+    if (word === element) {
+      htmlString = htmlString.concat("<b>" + element + "</b>");
+    } else {
+      htmlString = htmlString.concat(element);
+    }
+    htmlString = htmlString.concat(" ");
+  });
+  return htmlString + "</p>";
+}
+
 // UI Logic
 $(document).ready(function () {
   $("form#word-counter").submit(function (event) {

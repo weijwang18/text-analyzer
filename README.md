@@ -67,3 +67,10 @@ const text = "Red! Red. I like red, green, and yellow.";
 const word = "Red";
 numberOfOccurrencesInText(word, text);
 Expected Output: 3
+
+Describe: languageFilter()
+Test: "It should filter out the word zoinks."
+Code:
+const text = "Zoinks today is Tuesday."
+const word = "zoinks"
+Expected Output: "today is Tuesday."

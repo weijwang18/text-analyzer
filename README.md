@@ -74,3 +74,8 @@ Code:
 const text = "Zoinks today is Tuesday."
 const word = "zoinks"
 Expected Output: "today is Tuesday."
+
+Test: "It should filter out the word zoinks, muppeteer, biffaroni, loopdaloop."
+Code:
+const text = "Zoinks muppeteer biffaroni loopdaloop today is Tuesday."
+Expected Output: "today is Tuesday."

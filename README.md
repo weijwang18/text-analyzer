@@ -68,7 +68,7 @@ const word = "Red";
 numberOfOccurrencesInText(word, text);
 Expected Output: 3
 
-Describe: languageFilter()
+<!-- Describe: languageFilter()
 Test: "It should filter out the word zoinks."
 Code:
 const text = "Zoinks today is Tuesday."
@@ -78,4 +78,11 @@ Expected Output: "today is Tuesday."
 Test: "It should filter out the word zoinks, muppeteer, biffaroni, loopdaloop."
 Code:
 const text = "Zoinks muppeteer biffaroni loopdaloop today is Tuesday."
-Expected Output: "today is Tuesday."
+Expected Output: "today is Tuesday." -->
+
+Test: "If an empty string is passed in as a word, it should return 0."
+Code:
+const word = "";
+const text = "red RED Red!";
+wordCounter(word, text);
+Expected Output: 0

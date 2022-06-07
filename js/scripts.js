@@ -28,15 +28,15 @@ function numberOfOccurrencesInText(word, text) {
   return wordCount;
 }
 
-function languageFilter(word, text) {
-  const wordArray = text.split(" ");
-  wordArray.forEach(function (element) {
-    if (word.toLowerCase() === element.toLowerCase()) {
-      wordArray.splice(wordArray.indexOf(element), 1);
-    }
-  });
-  return wordArray.join(" ");
-}
+// function languageFilter(word, text) {
+//   const wordArray = text.split(" ");
+//   wordArray.forEach(function (element) {
+//     if (word.toLowerCase() === element.toLowerCase()) {
+//       wordArray.splice(wordArray.indexOf(element), 1);
+//     }
+//   });
+//   return wordArray.join(" ");
+// }
 
 // function languageFilter(word, text) {
 //   const wordArray = text.split(" ");
@@ -48,14 +48,14 @@ function languageFilter(word, text) {
 //   return wordArray.join(" ");
 // }
 
-function languageFilter(word, text) {
-  let goodtext = [];
-  const offensiveWords = ["zoinks", "muppeteer", "biffaroni", "loopdaloop"];
-  let textArray = text.split(" ");
-  textArray.forEach(function (element) {
-    if (!offensiveWords.includes(element.toLowerCase())) {
-      goodtext.push(element);
-    }
-  });
-  return goodtext.join(" ");
-}
+// function languageFilter(word, text) {
+//   let goodtext = [];
+//   const offensiveWords = ["zoinks", "muppeteer", "biffaroni", "loopdaloop"];
+//   let textArray = text.split(" ");
+//   textArray.forEach(function (element) {
+//     if (!offensiveWords.includes(element.toLowerCase())) {
+//       goodtext.push(element);
+//     }
+//   });
+//   return goodtext.join(" ");
+// }
